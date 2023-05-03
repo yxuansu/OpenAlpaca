@@ -9,12 +9,19 @@
 ![Model Weight License](https://img.shields.io/badge/Model_Weight%20License-Apache_2.0-green.svg)
 ![Data License](https://img.shields.io/badge/Data-CC%20BY--SA%203.0-red.svg)
 
-This is the repo for the OpenAlpaca project, which aims to build and share an instruction-following model based on [OpenLLaMA](https://github.com/openlm-research/open_llama). We note that, following OpenLLaMA, OpenAlpaca is permissively licensed under [the Apache 2.0 license](https://www.apache.org/licenses/LICENSE-2.0) which means OpenAlpaca can be used in any academic or commercial purposes for free. This repo contains
+**Team**: [Yixuan Su](https://yxuansu.github.io/)<sup>\*</sup>, [Tian Lan](https://github.com/gmftbyGMFTBY)<sup>\*</sup>, and [Deng Cai](https://jcyk.github.io/)<sup>\*</sup>
 
-- The data used for fine-tuning the model.
+This is the repo for the OpenAlpaca project, which aims to build and share an instruction-following model based on [OpenLLaMA](https://github.com/openlm-research/open_llama). We note that, following OpenLLaMA, OpenAlpaca is permissively licensed under [the Apache 2.0 license](https://www.apache.org/licenses/LICENSE-2.0). This repo contains
+
+- The <a href='#data'>data</a> used for fine-tuning the model.
 - The code for fine-tuning the model.
 - The weights for the fine-tuned model.
 
-**Team**: [Yixuan Su](https://yxuansu.github.io/)<sup>\*</sup>, [Tian Lan](https://github.com/gmftbyGMFTBY)<sup>\*</sup>, and [Deng Cai](https://jcyk.github.io/)<sup>\*</sup>
+**Usage and License Notices:** OpenAlpaca follows the distribution permission of [OpenLLaMA](https://github.com/openlm-research/open_llama), i.e. the Apache 2.0 license, which means OpenAlpaca can be used in any academic or commercial purposes for free.
+
 
 ****
+
+<span id='data'/>
+
+# Data:
