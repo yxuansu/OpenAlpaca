@@ -98,3 +98,9 @@ If you found OpenAlpaca useful in your research or applications, please kindly c
   year={2023}
 }
 ```
+
+<span id='acknowledgements'/>
+
+# Acknowledgements:
+
+This repo benefits from [OpenLLaMA](https://github.com/openlm-research/open_llama), [Alpaca](https://github.com/tatsu-lab/stanford_alpaca), and [Databricks](https://www.databricks.com/). Thanks for their wonderful works!
