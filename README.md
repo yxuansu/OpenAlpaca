@@ -42,3 +42,7 @@ The data, i.e. [openalpaca.json](https://github.com/yxuansu/OpenAlpaca/blob/main
 <span id='weights'/>
 
 # Model Weights:
+
+# Future Plans:
+
+The current OpenAlpaca_V1 (7B) model is trained on the previewed version of OpenLLaMA (7B). 
