@@ -53,4 +53,4 @@ The data, i.e. [openalpaca.json](https://github.com/yxuansu/OpenAlpaca/blob/main
 
 # Future Plans:
 
-1. The current OpenAlpaca_V1 (7B) model is fine-tuned on the previewed version of OpenLLaMA (7B). The previewed version of OpenLLaMA (7B) is only trained with 200 billion tokens and we expect the performance of the base OpenLLaMA (7B) model to improve as the training continues.
+1. The current OpenAlpaca_V1 (7B) model is fine-tuned on the previewed version of [OpenLLaMA](https://github.com/openlm-research/open_llama) (7B). The previewed version of OpenLLaMA (7B) is only trained with 200 billion tokens and we expect the performance of the base OpenLLaMA (7B) model to improve as the training continues. We will update the version of OpenAlpaca so long as newer checkpoint is released by the authors of OpenLLaMA.
