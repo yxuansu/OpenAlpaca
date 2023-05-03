@@ -9,7 +9,7 @@
 ![Model Weight License](https://img.shields.io/badge/Model_Weight%20License-Apache_2.0-green.svg)
 ![Data License](https://img.shields.io/badge/Data-CC%20BY--SA%203.0-red.svg)
 
-**Team**: [Yixuan Su](https://yxuansu.github.io/)<sup>\*</sup>, [Tian Lan](https://github.com/gmftbyGMFTBY)<sup>\*</sup>, and [Deng Cai](https://jcyk.github.io/)<sup>\*</sup>
+**Team:** [Yixuan Su](https://yxuansu.github.io/)<sup>\*</sup>, [Tian Lan](https://github.com/gmftbyGMFTBY)<sup>\*</sup>, and [Deng Cai](https://jcyk.github.io/)<sup>\*</sup>
 
 This is the repo for the OpenAlpaca project, which aims to build and share an instruction-following model based on [OpenLLaMA](https://github.com/openlm-research/open_llama). We note that, following OpenLLaMA, OpenAlpaca is permissively licensed under [the Apache 2.0 license](https://www.apache.org/licenses/LICENSE-2.0). This repo contains
 
