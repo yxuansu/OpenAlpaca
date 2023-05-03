@@ -56,3 +56,29 @@ The data, i.e. [openalpaca.json](https://github.com/yxuansu/OpenAlpaca/blob/main
 1. The current OpenAlpaca_V1 (7B) model is fine-tuned on the previewed version of [OpenLLaMA](https://github.com/openlm-research/open_llama) (7B). The previewed version of OpenLLaMA (7B) is only trained with **200** billion tokens and we expect the performance of the base OpenLLaMA (7B) model to improve as the training continues. We will update the version of OpenAlpaca so long as newer checkpoint is released by the authors of OpenLLaMA.
 
 2. We also plan to do a rigorous evaluation of OpenAlpaca and compare it with other publicly accessible models.
+
+<span id='reference'/>
+
+# Reference:
+
+If you found OpenAlpaca useful in your research or applications, please kindly cite using the following BibTeX:
+
+```
+@software{openalpaca,
+  author = {Su, Yixuan and Lan, Tian and Cai, Deng},
+  title = {OpenAlpaca: An Open-Source Instruction-Following OpenLLaMA Model that Can Be Commercially Used},
+  month = May,
+  year = 2023,
+  url = {https://github.com/yxuansu/OpenAlpaca}
+}
+```
+
+```
+@software{openlm2023openllama,
+  author = {Geng, Xinyang and Liu, Hao},
+  title = {OpenLLaMA: An Open Reproduction of LLaMA},
+  month = May,
+  year = 2023,
+  url = {https://github.com/openlm-research/open_llama}
+}
+```
