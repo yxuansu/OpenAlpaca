@@ -30,7 +30,7 @@ The data, i.e. [openalpaca.json](https://github.com/yxuansu/OpenAlpaca/blob/main
 
 **Format:** Following [Stanford Alpaca](https://github.com/tatsu-lab/stanford_alpaca), our json file is a list of dictionaries, each one contains the following fields.
 - `instruction`: it describes the task the model should perform.
-- `input`: optional context or input for the task.
+- `input`: optional context or input for the task (e.g. the document for summarization task). 
 - `output`: the answer to the instruction (and the optional input) which is written by human.
 
 **Reproduce the data:** To reproduce the data, simply run `python3 process_dataset.py`.
