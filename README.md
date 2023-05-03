@@ -15,6 +15,6 @@ This is the repo for the OpenAlpaca project, which aims to build and share an in
 - The code for fine-tuning the model.
 - The weights for the fine-tuned model.
 
-**Team**: Yixuan Su<sup>\*</sup>, Tian Lan<sup>\*</sup>, and Deng Cai<sup>\*</sup>
+**Team**: [Yixuan Su](https://yxuansu.github.io/)<sup>\*</sup>, Tian Lan(https://github.com/gmftbyGMFTBY)<sup>\*</sup>, and [Deng Cai](https://jcyk.github.io/)<sup>\*</sup>
 
 ****
