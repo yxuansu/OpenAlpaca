@@ -4,10 +4,9 @@
 
 # OpenAlpaca: A Fully Open-source Instruction-following Model based on OpenLLaMA
 
-
+![Data License](https://img.shields.io/badge/Data-CC%20BY--SA%203.0-red.svg)
 ![Code License](https://img.shields.io/badge/Code%20License-Apache_2.0-green.svg)
 ![Model Weight License](https://img.shields.io/badge/Model_Weight%20License-Apache_2.0-green.svg)
-![Data License](https://img.shields.io/badge/Data-CC%20BY--SA%203.0-red.svg)
 
 **Team:** [Yixuan Su](https://yxuansu.github.io/)<sup>\*</sup>, [Tian Lan](https://github.com/gmftbyGMFTBY)<sup>\*</sup>, and [Deng Cai](https://jcyk.github.io/)<sup>\*</sup> (all members contributed equally)
 
