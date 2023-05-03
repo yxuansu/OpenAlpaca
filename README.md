@@ -8,5 +8,5 @@
 
 
 ![Code License](https://img.shields.io/badge/Code%20License-Apache_2.0-green.svg)
-![Model Weight License](https://img.shields.io/badge/Code%20License-Apache_2.0-green.svg)
+![Model Weight License](https://img.shields.io/badge/Model_Weight%20License-Apache_2.0-green.svg)
 ****
