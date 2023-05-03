@@ -33,6 +33,4 @@ The data, i.e. [openalpaca.json](https://github.com/yxuansu/OpenAlpaca/blob/main
 - `input`: optional context or input for the task.
 - `output`: the answer to the instruction (and the optional input) which is written by human.
 
-
-
-To 
+**Reproduce the data:** To reproduce the data, simply run `python3 process_dataset.py`.
