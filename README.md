@@ -2,7 +2,7 @@
 <img src="./image.png" alt="OpenAlpaca" style="width: 50%; min-width: 300px; display: block; margin: auto;">
 </p>
 
-## OpenAlpaca: A Fully Open-source Instruction-following Model based on OpenLLaMA
+# OpenAlpaca: A Fully Open-source Instruction-following Model based on OpenLLaMA
 
 
 
