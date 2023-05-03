@@ -1,5 +1,5 @@
 ## OpenAlpaca: A Fully Open-source Instruction-following Model based on OpenLLaMA
 
-<img src="./image.png" width="660" height="500">
+<img src="./image.png" width="330" height="250">
 
 ****
