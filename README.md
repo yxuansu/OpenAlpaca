@@ -1,1 +1,1 @@
-# OpenAlpaca: A Fully Open-Source Instruction-Following OpenLLaMA Model
+# OpenAlpaca: A Fully Open-source Instruction-following Model based on OpenLLaMA
