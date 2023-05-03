@@ -14,7 +14,7 @@
 This is the repo for the OpenAlpaca project, which aims to build and share an instruction-following model based on [OpenLLaMA](https://github.com/openlm-research/open_llama). We note that, following OpenLLaMA, OpenAlpaca is permissively licensed under [the Apache 2.0 license](https://www.apache.org/licenses/LICENSE-2.0). This repo contains
 
 - The <a href='#data'>data</a> used for fine-tuning the model.
-- The code for fine-tuning the model.
+- The <a href='#code'>code</a> for fine-tuning the model.
 - The weights for the fine-tuned model.
 
 **Usage and License Notices:** OpenAlpaca follows the distribution permission of [OpenLLaMA](https://github.com/openlm-research/open_llama), i.e. the Apache 2.0 license, which means OpenAlpaca can be used in any academic or commercial purposes for free.
@@ -34,3 +34,8 @@ The data, i.e. [openalpaca.json](https://github.com/yxuansu/OpenAlpaca/blob/main
 - `output`: the answer to the instruction (and the optional input) which is written by human.
 
 **Reproduce the data:** To reproduce the data, simply run `python3 process_dataset.py`.
+
+
+<span id='code'/>
+
+# Fine-tuning the Model:
