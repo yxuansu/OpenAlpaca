@@ -25,3 +25,5 @@ This is the repo for the OpenAlpaca project, which aims to build and share an in
 <span id='data'/>
 
 # Data:
+
+The data we use to fine-tune the model is constructed from the [databricks-dolly-15k dataset](https://huggingface.co/datasets/databricks/databricks-dolly-15k) by removing instances that are too long. 
