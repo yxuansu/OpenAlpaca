@@ -62,44 +62,38 @@ The data, i.e. [openalpaca.json](https://github.com/yxuansu/OpenAlpaca/blob/main
 # Reference:
 
 If you found OpenAlpaca useful in your research or applications, please kindly cite using the following BibTeX:
-
 ```
-@software{openalpaca,
-  author = {Su, Yixuan and Lan, Tian and Cai, Deng},
+@misc{openalpaca,
+  author = {Yixuan Su and Tian Lan and Deng Cai},
   title = {OpenAlpaca: An Open-Source Instruction-Following OpenLLaMA Model that Can Be Commercially Used},
   month = May,
   year = 2023,
   url = {https://github.com/yxuansu/OpenAlpaca}
 }
 ```
-
 ```
 @software{openlm2023openllama,
-  author = {Geng, Xinyang and Liu, Hao},
+  author = {Xinyang Geng and Hao Liu},
   title = {OpenLLaMA: An Open Reproduction of LLaMA},
   month = May,
   year = 2023,
   url = {https://github.com/openlm-research/open_llama}
 }
 ```
-
+```
+@misc{alpaca,
+  author = {Rohan Taori and Ishaan Gulrajani and Tianyi Zhang and Yann Dubois and Xuechen Li and Carlos Guestrin and Percy Liang and Tatsunori B. Hashimoto },
+  title = {Stanford Alpaca: An Instruction-following LLaMA model},
+  year = {2023},
+  publisher = {GitHub},
+  journal = {GitHub repository},
+  howpublished = {\url{https://github.com/tatsu-lab/stanford_alpaca}},
+}
+```
 ```
 @article{touvron2023llama,
   title={Llama: Open and efficient foundation language models},
-  author={Hugo Touvron and
-                  Thibaut Lavril and
-                  Gautier Izacard and
-                  Xavier Martinet and
-                  Marie{-}Anne Lachaux and
-                  Timoth{\'{e}}e Lacroix and
-                  Baptiste Rozi{\`{e}}re and
-                  Naman Goyal and
-                  Eric Hambro and
-                  Faisal Azhar and
-                  Aur{\'{e}}lien Rodriguez and
-                  Armand Joulin and
-                  Edouard Grave and
-                  Guillaume Lample},
+  author={Hugo Touvron and Thibaut Lavril and Gautier Izacard and Xavier Martinet and Marie{-}Anne Lachaux and Timoth{\'{e}}e Lacroix and Baptiste Rozi{\`{e}}re and Naman Goyal and Eric Hambro and Faisal Azhar and Aur{\'{e}}lien Rodriguez and Armand Joulin and Edouard Grave and Guillaume Lample},
   journal={arXiv preprint arXiv:2302.13971},
   year={2023}
 }
