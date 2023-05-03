@@ -66,9 +66,10 @@ If you found OpenAlpaca useful in your research or applications, please kindly c
 @misc{openalpaca,
   author = {Yixuan Su and Tian Lan and Deng Cai},
   title = {OpenAlpaca: A Fully Open-Source Instruction-Following Model Based On OpenLLaMA},
-  month = May,
-  year = 2023,
-  url = {https://github.com/yxuansu/OpenAlpaca}
+  year = {2023},
+  publisher = {GitHub},
+  journal = {GitHub repository},
+  howpublished = {\url{https://github.com/yxuansu/OpenAlpaca}},
 }
 ```
 ```
