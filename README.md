@@ -15,6 +15,7 @@ This is the repo for the OpenAlpaca project, which aims to build and share an in
 - The <a href='#data'>data</a> used for fine-tuning the model.
 - The <a href='#code'>code</a> for fine-tuning the model.
 - The <a href='#weights'>weights</a> for the fine-tuned model.
+- 
 
 **Usage and License Notices:** OpenAlpaca follows the distribution permission of [OpenLLaMA](https://github.com/openlm-research/open_llama), i.e. the Apache 2.0 license, which means OpenAlpaca can be used in any academic or commercial purposes for free.
 
@@ -43,6 +44,13 @@ The data, i.e. [openalpaca.json](https://github.com/yxuansu/OpenAlpaca/blob/main
 
 # Model Weights:
 
+
+<span id='example_usage'/>
+
+# Example Usage:
+
+<span id='future_plans'/>
+
 # Future Plans:
 
-The current OpenAlpaca_V1 (7B) model is fine-tuned on the previewed version of OpenLLaMA (7B). The previewed version of OpenLLaMA (7B) is only trained with 200 billion tokens and we expect the performance of the base OpenLLaMA (7B) model to improve as the training continues.
+1. The current OpenAlpaca_V1 (7B) model is fine-tuned on the previewed version of OpenLLaMA (7B). The previewed version of OpenLLaMA (7B) is only trained with 200 billion tokens and we expect the performance of the base OpenLLaMA (7B) model to improve as the training continues.
