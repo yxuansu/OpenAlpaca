@@ -2,7 +2,7 @@
 <img src="./image.png" alt="OpenAlpaca" style="width: 50%; min-width: 300px; display: block; margin: auto;">
 </p>
 
-# OpenAlpaca: An Open-Source Instruction-Following OpenLLaMA Model that Can Be Commercially Used
+# OpenAlpaca: A Fully Open-Source Instruction-Following Model Based On OpenLLaMA
 
 ![Data License](https://img.shields.io/badge/Data-CC%20BY--SA%203.0-red.svg)
 ![Code License](https://img.shields.io/badge/Code%20License-Apache_2.0-green.svg)
@@ -65,7 +65,7 @@ If you found OpenAlpaca useful in your research or applications, please kindly c
 ```
 @misc{openalpaca,
   author = {Yixuan Su and Tian Lan and Deng Cai},
-  title = {OpenAlpaca: An Open-Source Instruction-Following OpenLLaMA Model that Can Be Commercially Used},
+  title = {OpenAlpaca: A Fully Open-Source Instruction-Following Model Based On OpenLLaMA},
   month = May,
   year = 2023,
   url = {https://github.com/yxuansu/OpenAlpaca}
