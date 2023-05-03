@@ -86,7 +86,20 @@ If you found OpenAlpaca useful in your research or applications, please kindly c
 ```
 @article{touvron2023llama,
   title={Llama: Open and efficient foundation language models},
-  author={Touvron, Hugo and Lavril, Thibaut and Izacard, Gautier and Martinet, Xavier and Lachaux, Marie-Anne and Lacroix, Timoth{\'e}e and Rozi{\`e}re, Baptiste and Goyal, Naman and Hambro, Eric and Azhar, Faisal and others},
+  author={Hugo Touvron and
+                  Thibaut Lavril and
+                  Gautier Izacard and
+                  Xavier Martinet and
+                  Marie{-}Anne Lachaux and
+                  Timoth{\'{e}}e Lacroix and
+                  Baptiste Rozi{\`{e}}re and
+                  Naman Goyal and
+                  Eric Hambro and
+                  Faisal Azhar and
+                  Aur{\'{e}}lien Rodriguez and
+                  Armand Joulin and
+                  Edouard Grave and
+                  Guillaume Lample},
   journal={arXiv preprint arXiv:2302.13971},
   year={2023}
 }
