@@ -2,7 +2,7 @@
 <img src="./image.png" alt="OpenAlpaca" style="width: 50%; min-width: 300px; display: block; margin: auto;">
 </p>
 
-# OpenAlpaca: An Open-source Instruction-following OpenLLaMA Model That Can Be Commercially Used
+# OpenAlpaca: An Open-Source Instruction-Following OpenLLaMA Model that Can Be Commercially Used
 
 ![Data License](https://img.shields.io/badge/Data-CC%20BY--SA%203.0-red.svg)
 ![Code License](https://img.shields.io/badge/Code%20License-Apache_2.0-green.svg)
