@@ -90,6 +90,14 @@ string = string.replace('<s>', '').replace('</s>', '').strip()
 print(f'[!] Generation results: {string}')
 ```
 
+<details>
+<summary><b>Model Output: [click to expand]</b></summary>
+  
+```
+[!] Generation results: An alpaca is a smaller version of a llama. Both are South American animals. However, an alpaca has a wooly coat that is very soft, while a llama’s coat is tougher and woolier.
+```
+</details>
+
 <span id='future_plans'/>
 
 <span id='code'/>
