@@ -43,7 +43,7 @@ The data, i.e. [openalpaca.json](https://github.com/yxuansu/OpenAlpaca/blob/main
 **1. Download OpenLLaMA Checkpoint:** First download the [OpenLLaMA preview checkpoint](https://huggingface.co/openlm-research/open_llama_7b_preview_200bt/tree/main/open_llama_7b_preview_200bt_transformers_weights) on huggingface to your loacl directory. 
 
 
-**[Training configuration and time:]**
+**[Training configuration and time]**
 
 <span id='weights'/>
 
