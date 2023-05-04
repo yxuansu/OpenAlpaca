@@ -1,43 +1,36 @@
 from header import *
-from datasets import *
-from model import *
-from config import *
-from train_sft import *
 
-
-def parser_args():
-    parser = argparse.ArgumentParser(description='train parameters')
-    parser.add_argument('--model', type=str)
-    parser.add_argument('--local_rank', type=int)
-    parser.add_argument('--test_base_model', type=str, default='False')
-    return parser.parse_args()
-
-def main(**args):
-    args['mode'] = 'test'
-    config = load_config(args)
-    args.update(config)
-    initialize_distributed(args)
-    set_random_seed(args['seed'])
-    agent = load_model(args)
+def main():
+    model_path = '/home/johnlan/pretrained_models/openllama'
+    model = LlamaForCausalLM.from_pretrained(model_path).cuda()
+    tokenizer = LlamaTokenizer.from_pretrained(model_path)
 
     # instruction = 'What is the Natural Language Processing'
-    instruction = input('Input your instruction:')
+    instruction = input('Input your instruction: ')
     prompt_no_input = f'### Instruction:\n{instruction}\n\n### Response:'
-    tokens = agent.tokenizer.encode(prompt_no_input)
+    tokens = tokenizer.encode(prompt_no_input)
     tokens = [1] + tokens + [2] + [1]
-    tokens = torch.LongTensor(tokens[-1024:]).unsqueeze(0)
+    tokens = torch.LongTensor(tokens[-1024:]).unsqueeze(0).cuda()
 
     instance = {
         'input_ids': tokens,
-        'decoding_method': 'sampling',
         'top_k': 50,
         'top_p': 0.9,
         'generate_len': 256
     }
-    rest = agent.predict(instance)
-    print(f'[!] Generation results: {rest}')
+    length = len(tokens[0])
+    rest = model.generate(
+        input_ids=tokens, 
+        max_length=length+instance['generate_len'], 
+        use_cache=True, 
+        do_sample=True, 
+        top_p=instance['top_p'], 
+        top_k=instance['top_k']
+    )
+    output = rest[0][length:]
+    string = tokenizer.decode(output, skip_special_tokens=False)
+    string = string.replace('<s>', '').replace('</s>', '').strip()
+    print(f'[!] Generation results: {string}')
 
 if __name__ == "__main__":
-    args = parser_args()
-    args = vars(args)
-    main(**args)
+    main()
