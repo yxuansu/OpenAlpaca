@@ -107,10 +107,7 @@ print(f'[!] Generation results: {string}')
 
 # Fine-tuning the Model:
 
-**1. Download OpenLLaMA Checkpoint:** First download the [OpenLLaMA preview checkpoint](https://huggingface.co/openlm-research/open_llama_7b_preview_200bt/tree/main/open_llama_7b_preview_200bt_transformers_weights) on huggingface to your loacl directory. 
-
-
-**[Training configuration and time]**
+To be released soon.
 
 # Future Plans:
 
