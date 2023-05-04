@@ -40,6 +40,9 @@ The data, i.e. [openalpaca.json](https://github.com/yxuansu/OpenAlpaca/blob/main
 
 # Fine-tuning the Model:
 
+1. Download OpenLLaMA Checkpoint:
+
+
 **Training configuration and time:**
 
 <span id='weights'/>
