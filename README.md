@@ -7,6 +7,7 @@
 ![Data License](https://img.shields.io/badge/Data_License-CC%20BY--SA%203.0-red.svg)
 ![Code License](https://img.shields.io/badge/Code%20License-Apache_2.0-green.svg)
 ![Model Weight License](https://img.shields.io/badge/Model_Weights%20License-Apache_2.0-green.svg)
+![Python 3.9+](https://img.shields.io/badge/python-3.9+-blue.svg)
 
 **Team:** [Yixuan Su](https://yxuansu.github.io/)<sup>\*</sup>, [Tian Lan](https://github.com/gmftbyGMFTBY)<sup>\*</sup>, and [Deng Cai](https://jcyk.github.io/) (The first two members<sup>\*</sup> contributed equally.)
 
