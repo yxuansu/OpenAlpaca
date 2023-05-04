@@ -1,0 +1,47 @@
+tokenizer: /home/johnlan/pretrained_models/openllama
+pretrained_model: /home/johnlan/pretrained_models/openllama
+
+# generation hyper-parameters
+max_len: 512
+penalty_alpha: 0.6
+top_k: 10
+top_p: 0.7
+random_prefix_len: 5
+sample_num: 2
+decoding_method: sampling
+generate_len: 512
+
+# lora parameters
+lora_r: 32
+lora_alpha: 32
+lora_dropout: 0.1
+
+# train configuration
+train:
+    lr: 0.005
+    dropout_rate: 1.0
+    grad_clip: 1.0
+    seed: 0
+    batch_size: 8
+    warmup_rate: 0.1
+    epochs: 2
+
+test:
+    generate_method: greedy
+    generate_len: 32
+    topk: 40
+    topp: 0.92
+    penalty_alpha: 0.6
+    seed: 0
+    batch_size: 1
+    prefix_max_len: 32
+    generate_len: 128
+    ppl_max_len: 256
+    prefix_len: 32
+
+validation:
+    seed: 0
+    batch_size: 32
+    prefix_max_len: 256
+    ppl_max_len: 256
+    prefix_len: 32
