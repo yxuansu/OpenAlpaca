@@ -39,6 +39,11 @@ The data, i.e. [openalpaca.json](https://github.com/yxuansu/OpenAlpaca/blob/main
 
 # Model Weights:
 
+|**Model Name**|**Model Card**|**Model Description**|
+|:-------------:|:-------------:|:-------------:|
+|`openllmplayground/openalpaca_7b_preview_2bt`|[[Link]](https://huggingface.co/openllmplayground/openalpaca_7b_preview_2bt/)|```The OpenAlpaca model fine-tuned from the previewed version of OpenLLaMA that is trained with 200 billion tokens.```|
+
+
 
 <span id='example_usage'/>
 
