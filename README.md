@@ -35,16 +35,6 @@ The data, i.e. [openalpaca.json](https://github.com/yxuansu/OpenAlpaca/blob/main
 
 **Reproduce the data:** To reproduce the data, simply run `python3 process_dataset.py`.
 
-
-<span id='code'/>
-
-# Fine-tuning the Model:
-
-**1. Download OpenLLaMA Checkpoint:** First download the [OpenLLaMA preview checkpoint](https://huggingface.co/openlm-research/open_llama_7b_preview_200bt/tree/main/open_llama_7b_preview_200bt_transformers_weights) on huggingface to your loacl directory. 
-
-
-**[Training configuration and time]**
-
 <span id='weights'/>
 
 # Model Weights:
@@ -54,7 +44,41 @@ The data, i.e. [openalpaca.json](https://github.com/yxuansu/OpenAlpaca/blob/main
 
 # Example Usage:
 
+Below shows an example on how to use OpenAlpaca
+
+```python
+import torch
+from transformers import LlamaForCausalLM, LlamaTokenizer
+
+# the previewed version of OpenAlpaca
+model_path = r'openllmplayground/openalpaca_7b_preview_2bt' 
+tokenizer = LlamaTokenizer.from_pretrained(model_path)
+model = LlamaForCausalLM.from_pretrained(model_path)
+
+
+# same prompt as provided in https://crfm.stanford.edu/2023/03/13/alpaca.html
+instruction = r'What is an alpaca? How is it different from a llama?'
+'''
+instruction = r'Write an e-mail to congratulate new Standford admits and mention that you are excited about meeting all of them in person.'
+instruction = r'What is the capital of Tanzania?'
+instruction = r'Write a well-thought out abstract for a machine learning paper that proves that 42 is the optimal seed for training neural networks.'
+'''
+
+
+
+
+```
+
 <span id='future_plans'/>
+
+<span id='code'/>
+
+# Fine-tuning the Model:
+
+**1. Download OpenLLaMA Checkpoint:** First download the [OpenLLaMA preview checkpoint](https://huggingface.co/openlm-research/open_llama_7b_preview_200bt/tree/main/open_llama_7b_preview_200bt_transformers_weights) on huggingface to your loacl directory. 
+
+
+**[Training configuration and time]**
 
 # Future Plans:
 
