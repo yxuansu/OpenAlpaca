@@ -59,7 +59,7 @@ from transformers import LlamaForCausalLM, LlamaTokenizer
 # the previewed version of OpenAlpaca
 model_path = r'openllmplayground/openalpaca_7b_preview_2bt' 
 tokenizer = LlamaTokenizer.from_pretrained(model_path)
-model = LlamaForCausalLM.from_pretrained(model_path)
+model = LlamaForCausalLM.from_pretrained(model_path).cuda()
 
 # same prompt as provided in https://crfm.stanford.edu/2023/03/13/alpaca.html
 instruction = r'What is an alpaca? How is it different from a llama?'
@@ -73,7 +73,7 @@ prompt_no_input = f'### Instruction:\n{instruction}\n\n### Response:'
 tokens = tokenizer.encode(prompt_no_input)
 bos_token_id, eos_token_id = 1, 2 # see https://github.com/openlm-research/open_llama#preview-weights-release-and-usage
 tokens = [bos_token_id] + tokens + [eos_token_id] + [bos_token_id]
-tokens = torch.LongTensor(tokens[-1024:]).unsqueeze(0)
+tokens = torch.LongTensor(tokens[-1024:]).unsqueeze(0).cuda()
 instance = {'input_ids': tokens,
             'top_k': 50,
             'top_p': 0.9,
