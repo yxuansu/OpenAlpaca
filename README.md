@@ -34,6 +34,26 @@ The data, i.e. [openalpaca.json](https://github.com/yxuansu/OpenAlpaca/blob/main
 - `input`: optional context or input for the task (e.g. the document for summarization task). 
 - `output`: the answer to the instruction (and the optional input) which is written by human.
 
+We use the following prompts to fine-tune the OpenAlpaca model:
+- for examples with an empty input field:
+```
+### Instruction:
+{instruction}
+
+### Response:
+```
+
+- for examples with a non-empty input field:
+```
+### Input:
+{input}
+
+### Instruction:
+{instruction}
+
+### Response:
+```
+
 **Reproduce the data:** To reproduce the data, simply run `python3 process_dataset.py`.
 
 <span id='weights'/>
