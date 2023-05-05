@@ -70,7 +70,9 @@ We use the following prompts to fine-tune the OpenAlpaca model:
 
 # Example Usage:
 
-Below shows an example on how to use OpenAlpaca. We would like to note that unlike LLaMA, OpenLLaMA uses the token id of 1 as the bos (begining of the sequence) token. Please refer to the authors' [orginal implementation](https://github.com/openlm-research/open_llama#preview-weights-release-and-usage) for more information.
+**[Note]** We would like to note that unlike LLaMA, OpenLLaMA uses the token id of 1 as the bos (begining of the sequence) token. Please refer to the authors' [orginal implementation](https://github.com/openlm-research/open_llama#preview-weights-release-and-usage) for more information.
+
+Below shows an example on how to use OpenAlpaca.
 
 ```python
 import torch
