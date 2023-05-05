@@ -98,7 +98,8 @@ print(f'[!] Generation results: {string}')
 
 **[Model Output]**
 ```
-[!] Generation results: An alpaca is a smaller version of a llama. Both are South American animals. However, an alpaca has a wooly coat that is very soft, while a llama’s coat is tougher and woolier.
+[!] Generation results: An alpaca is a smaller version of a llama. Both are South American animals. However, 
+an alpaca has a wooly coat that is very soft, while a llama’s coat is tougher and woolier.
 ```
 
 
