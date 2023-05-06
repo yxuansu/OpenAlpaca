@@ -172,7 +172,7 @@ In our experiments, we train our model using DeepSpeed with Zero-3 on 8xA100 GPU
 ./scripts/train_sft.sh
 ```
 The key arguments of the training script are as follows:
-* `--model_path`: The directory that stores the downloaded checkpoints of OpenLLaMA.
+* `--model_path`: The directory (e.g. [./openllama_ckpt](./openllama_ckpt)) that stores the downloaded checkpoints of OpenLLaMA.
 
 ## 2. 
 
