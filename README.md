@@ -15,9 +15,9 @@ This is the repo for the OpenAlpaca project, which aims to build and share an in
 
 This repo contains
 - The <a href='#data'>data</a> used for fine-tuning the model.
-- The <a href='#code'>code</a> for fine-tuning the model.
 - The <a href='#weights'>weights</a> for the fine-tuned model.
 - The <a href='#example_usage'>example usage</a> of OpenAlpaca.
+- The <a href='#code'>code</a> for fine-tuning the model.
 
 **Usage and License Notices:** OpenAlpaca follows the distribution permission of [OpenLLaMA](https://github.com/openlm-research/open_llama), i.e. the Apache 2.0 license, which means OpenAlpaca can be used in any academic or commercial purposes for free.
 
