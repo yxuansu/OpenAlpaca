@@ -198,6 +198,11 @@ python {--save_path}/zero_to_fp32.py {--save_path} {--save_path}/pytorch_model.b
 ```
 Then, you can find the torch model `pytorch_model.bin` in `--save_path`.
 
+The resulting checkpoint `pytorch_model.bin` is quite large. If you would like to split it into multiple shards, you can run the command below.
+```yaml
+./scripts/make_shards.sh
+```
+
 
 ## 2. 
 
