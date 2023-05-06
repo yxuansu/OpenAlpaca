@@ -69,8 +69,7 @@ We use the following prompts to fine-tune the OpenAlpaca model:
 |**Model Name**|**Model Card**|**Model Description**|
 |:-------------:|:-------------:|:-------------:|
 |`openllmplayground/openalpaca_7b_preview_2bt`|[[Link]](https://huggingface.co/openllmplayground/openalpaca_7b_preview_2bt/)|```The OpenAlpaca model fine-tuned from the previewed version of OpenLLaMA that is trained with 200 billion tokens.```|
-
-
+|`openllmplayground/openalpaca_7b_preview_3bt`|[[Link]](https://huggingface.co/openllmplayground/openalpaca_7b_preview_3bt/)|```The OpenAlpaca model fine-tuned from the previewed version of OpenLLaMA that is trained with 300 billion tokens.```|
 
 <span id='example_usage'/>
 
