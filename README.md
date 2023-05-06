@@ -133,6 +133,9 @@ an alpaca has a wooly coat that is very soft, while a llama’s coat is tougher 
 # Fine-tuning the Model:
 
 ## 1. Environment Setup:
+
+The fine-tuning of OpenAlpaca takes on a machine with 8xA100 (40G) GPUs and a CUDA version of 11.7.
+
 To install the required environment, simply run the following command.
 ```yaml
 pip install -r requirements.txt
@@ -143,7 +146,12 @@ If any error occurs when installing torch, you can install torch manually with t
 pip install torch==1.13.1+cu117 -f https://download.pytorch.org/whl/torch/
 ```
 
-Note that the version of torch should be selected based on the hardware configuration. We conduct our experiments using Cuda 11.7 version.
+## 2. Download OpenLLaMA checkpoints:
+
+Before training OpenAlpaca, please manually downloading the checkpoints of OpenLLaMA from huggingface and put the downloaded files in the 
+
+
+## 2. 
 
 
 To be released soon.
