@@ -75,7 +75,7 @@ We use the following prompts to fine-tune the OpenAlpaca model:
 
 # Example Usage:
 
-**[Note]** We would like to note that, unlike LLaMA, OpenAlpaca uses the token id of 1 as the bos (begining of the sequence) token. This follows the definition of OpenLLaMA. Please refer to the authors' [orginal implementations](https://github.com/openlm-research/open_llama#preview-weights-release-and-usage) for more information.
+**[Note]** We would like to note that, unlike LLaMA, OpenAlpaca uses the token id of **1** as the bos (begining of the sequence) token. This follows the definition of OpenLLaMA. Please refer to the authors' [orginal implementations](https://github.com/openlm-research/open_llama#preview-weights-release-and-usage) for more information.
 
 Below shows an example on how to use OpenAlpaca.
 
