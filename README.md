@@ -140,8 +140,10 @@ pip install -r requirements.txt
 
 If any error occurs when installing torch, you can install torch manually with the command below.
 ```yaml
-pip install torch==1.13.1+cu116 -f https://download.pytorch.org/whl/torch/
+pip install torch==1.13.1+cu117 -f https://download.pytorch.org/whl/torch/
 ```
+
+Note that the version of torch should be selected based on the hardware configuration. We conduct our experiments using Cuda 11.7 version.
 
 
 To be released soon.
