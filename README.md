@@ -196,7 +196,7 @@ After the training completes, you find the tokenizer, configuration, and deepspe
 ```yaml
 python {--save_path}/zero_to_fp32.py {--save_path} {--save_path}/pytorch_model.bin
 ```
-
+Then, you can find the torch model `pytorch_model.bin` in {--save_path}.
 
 
 ## 2. 
