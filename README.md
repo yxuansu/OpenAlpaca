@@ -192,11 +192,11 @@ The table below shows the hyperparameters of the learning process.
 
 The `batch_size` and `learning_rate` can be adjusted in [./dsconfig/openllama.json](./dsconfig/openllama.json). The `epoch_number` and `maximum_length` can be adjusted in [./config/openllama.yaml](./config/openllama.yaml).
 
-After the training completes, you find the tokenizer, configuration, and deepspeed checkpoints in {--save_path}. Running the following command to convert the deepspeed checkpints to torch models.
+After the training completes, you find the tokenizer, configuration, and deepspeed checkpoints in `--save_path`. Running the following command to convert the deepspeed checkpints to torch models.
 ```yaml
 python {--save_path}/zero_to_fp32.py {--save_path} {--save_path}/pytorch_model.bin
 ```
-Then, you can find the torch model `pytorch_model.bin` in {--save_path}.
+Then, you can find the torch model `pytorch_model.bin` in `--save_path`.
 
 
 ## 2. 
