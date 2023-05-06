@@ -178,12 +178,14 @@ The key arguments of the training script are as follows:
 
 The table below shows the hyperparameters of the learning process.
 
-|||
+|**Hyperparameter**|**Value**|
 |:-------------:|:-------------:|
 |Batch size|64|
 |Learning rate|2e-5|
 |Epochs|2|
 |Maximum length|1024|
+
+The `batch_size` and `learning_rate` can be adjusted in [./dsconfig/openllama.json](./dsconfig/openllama.json). The `epoch_number` and `maximum_length` can be adjusted in [./config/openllama.yaml](./config/openllama.yaml).
 
 
 
