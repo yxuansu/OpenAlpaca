@@ -132,6 +132,18 @@ an alpaca has a wooly coat that is very soft, while a llama’s coat is tougher 
 
 # Fine-tuning the Model:
 
+## 1. Environment Setup:
+To install the required environment, simply run the following command.
+```yaml
+pip install -r requirements.txt
+```
+
+If any error occurs when installing torch, you can install torch manually with the command below.
+```yaml
+pip install torch==1.13.1+cu116 -f https://download.pytorch.org/whl/torch/
+```
+
+
 To be released soon.
 
 # Future Plans:
