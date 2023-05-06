@@ -148,7 +148,7 @@ pip install torch==1.13.1+cu117 -f https://download.pytorch.org/whl/torch/
 
 ## 2. Download OpenLLaMA checkpoints:
 
-Before training OpenAlpaca, please manually downloading the checkpoints of OpenLLaMA from huggingface and put the downloaded files in the 
+Before training OpenAlpaca, please manually downloading the checkpoints of OpenLLaMA from huggingface and place the downloaded files in the [./openllama_ckpt](./openllama_ckpt) directory.
 
 
 ## 2. 
