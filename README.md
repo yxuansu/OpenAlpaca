@@ -178,7 +178,7 @@ In our experiments, we train our model using DeepSpeed with Zero-3 on 8xA100 GPU
 The key arguments of the training script are as follows:
 * `--model_path`: The directory (e.g. [./openllama_ckpt](./openllama_ckpt)) that stores the downloaded checkpoints of OpenLLaMA.
 * `--data_path`: The path of training data.
-* `--save_path`: The path to save the fine-tuned OpenAlpaca.
+* `--save_path`: The path to save the fine-tuned OpenAlpaca checkpoint.
 
 The table below shows the hyperparameters of the learning process.
 
