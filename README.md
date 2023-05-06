@@ -172,7 +172,7 @@ Before training OpenAlpaca, please manually downloading the checkpoints of OpenL
 
 ## 3. Model Training:
 
-In our experiments, we train our model using DeepSpeed with Zero-3 on 8xA100 GPUs. To start the training, run the following command.
+In our experiments, we train our model using DeepSpeed with Zero-3 on 8xA100 GPUs. To start the training, run the following command. The entire training process should take around 30 minutes.
 ```yaml
 ./scripts/train_sft.sh
 ```
@@ -203,11 +203,24 @@ The resulting checkpoint `pytorch_model.bin` is quite large. If you would like t
 ./scripts/make_shards.sh
 ```
 
+> **** After spliting, the directory of saved checkpoints should look like:
 
-## 2. 
-
-
-To be released soon.
+    .
+    └── ./ckpt/openalpaca/             
+        ├── config.json
+        ├── generation_config.json
+        ├── pytorch_model-00001-of-00006.bin
+        ├── pytorch_model-00002-of-00006.bin
+        ├── pytorch_model-00003-of-00006.bin
+        ├── pytorch_model-00004-of-00006.bin
+        ├── pytorch_model-00005-of-00006.bin
+        ├── pytorch_model-00006-of-00006.bin
+        ├── pytorch_model.bin.index.json
+        ├── special_tokens_map.json
+        ├── tokenizer_config.json
+        └── tokenizer.model
+        
+Now the model is good to go! Enjoy playing with OpenAlpaca!
 
 # Future Plans:
 
