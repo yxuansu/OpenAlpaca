@@ -148,8 +148,31 @@ pip install torch==1.13.1+cu117 -f https://download.pytorch.org/whl/torch/
 
 ## 2. Download OpenLLaMA checkpoints:
 
-Before training OpenAlpaca, please manually downloading the checkpoints of OpenLLaMA from huggingface and place the downloaded files in the [./openllama_ckpt](./openllama_ckpt) directory.
+Before training OpenAlpaca, please manually downloading the checkpoints of OpenLLaMA from huggingface and place the downloaded files in the [./openllama_ckpt](./openllama_ckpt) directory. Below are the links of available OpenLLaMA models.
+- The previewed version of [OpenLLaMA trained with 200 billion tokens](https://huggingface.co/openlm-research/open_llama_7b_preview_200bt/tree/main/open_llama_7b_preview_200bt_transformers_weights).
+- The previewed version of [OpenLLaMA trained with 300 billion tokens](https://huggingface.co/openlm-research/open_llama_7b_preview_300bt/tree/main/open_llama_7b_preview_300bt_transformers_weights).
 
+> **** After downloading, the directory should look like:
+
+    .
+    └── ./openllama_ckpt/             
+        ├── config.json
+        ├── generation_config.json
+        ├── pytorch_model-00001-of-00002.bin
+        ├── pytorch_model-00002-of-00002.bin
+        ├── pytorch_model.bin.index.json
+        ├── special_tokens_map.json
+        ├── tokenizer.model
+        └── tokenizer_config.json
+
+## 3. Model Training:
+
+In our experiments, we train our model using DeepSpeed with Zero-3 on 8xA100 GPUs. To start the training, run the following command.
+```yaml
+./scripts/train_sft.sh
+```
+The key arguments of the training script are as follows:
+* `--model_path`: The directory that stores the downloaded checkpoints of OpenLLaMA.
 
 ## 2. 
 
