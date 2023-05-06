@@ -21,6 +21,11 @@ This repo contains
 
 **Usage and License Notices:** OpenAlpaca follows the distribution permission of [OpenLLaMA](https://github.com/openlm-research/open_llama), i.e. the Apache 2.0 license, which means OpenAlpaca can be used in any academic or commercial purposes for free.
 
+****
+
+# News:
+* [2023/05/06] Release the training code and the OpenAlpaca model based on the OpenLLaMA model trained with 300 billion tokens.
+* [2023/05/04] The project of OpenAlpaca is open-sourced. Release the OpenAlpaca model based on the OpenLLaMA model trained with 200 billion tokens.
 
 ****
 
