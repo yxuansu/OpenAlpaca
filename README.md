@@ -14,8 +14,8 @@
 This is the repo for the OpenAlpaca project, which aims to build and share an instruction-following model based on [OpenLLaMA](https://github.com/openlm-research/open_llama). We note that, following OpenLLaMA, OpenAlpaca is permissively licensed under [the Apache 2.0 license](https://www.apache.org/licenses/LICENSE-2.0). We also highlight that the training of OpenAlpaca only takes around **30** minutes on 8xA100 GPUs.
 
 This repo contains
-- The <a href='#data'>data</a> used for fine-tuning the model.
 - The <a href='#weights'>weights</a> for the fine-tuned model.
+- The <a href='#data'>data</a> used for fine-tuning the model.
 - The <a href='#example_usage'>example usage</a> of OpenAlpaca.
 - The <a href='#code'>code</a> for fine-tuning the model.
 
@@ -28,6 +28,15 @@ This repo contains
 * [2023/05/04] The project of OpenAlpaca is open-sourced. Release the OpenAlpaca model based on the OpenLLaMA model trained with 200 billion tokens.
 
 ****
+
+<span id='weights'/>
+
+# Model Weights:
+
+|**Model Name**|**Model Card**|**Model Description**|
+|:-------------:|:-------------:|:-------------:|
+|`openllmplayground/openalpaca_7b_preview_2bt`|[[Link]](https://huggingface.co/openllmplayground/openalpaca_7b_preview_2bt/)|```The OpenAlpaca model fine-tuned from the previewed version of OpenLLaMA that is trained with 200 billion tokens.```|
+|`openllmplayground/openalpaca_7b_preview_3bt`|[[Link]](https://huggingface.co/openllmplayground/openalpaca_7b_preview_3bt/)|```The OpenAlpaca model fine-tuned from the previewed version of OpenLLaMA that is trained with 300 billion tokens.```|
 
 <span id='data'/>
 
@@ -61,15 +70,6 @@ We use the following prompts to fine-tune the OpenAlpaca model:
 ```
 
 **Reproduce the data:** To reproduce the data, simply run `python3 process_dataset.py`.
-
-<span id='weights'/>
-
-# Model Weights:
-
-|**Model Name**|**Model Card**|**Model Description**|
-|:-------------:|:-------------:|:-------------:|
-|`openllmplayground/openalpaca_7b_preview_2bt`|[[Link]](https://huggingface.co/openllmplayground/openalpaca_7b_preview_2bt/)|```The OpenAlpaca model fine-tuned from the previewed version of OpenLLaMA that is trained with 200 billion tokens.```|
-|`openllmplayground/openalpaca_7b_preview_3bt`|[[Link]](https://huggingface.co/openllmplayground/openalpaca_7b_preview_3bt/)|```The OpenAlpaca model fine-tuned from the previewed version of OpenLLaMA that is trained with 300 billion tokens.```|
 
 <span id='example_usage'/>
 
