@@ -88,9 +88,11 @@ import torch
 from transformers import LlamaForCausalLM, LlamaTokenizer
 
 # the previewed version of OpenAlpaca
-model_path = r'openllmplayground/openalpaca_7b_preview_2bt' 
+model_path = r'openllmplayground/openalpaca_3b_600bt_preview'
+cache_dir = r'./openalpaca_ckpt/'
 tokenizer = LlamaTokenizer.from_pretrained(model_path)
 model = LlamaForCausalLM.from_pretrained(model_path).cuda()
+tokenizer.bos_token_id, tokenizer.eos_token_id = 1,2 # see https://github.com/openlm-research/open_llama#preview-weights-release-and-usage
 
 # same prompt as provided in https://crfm.stanford.edu/2023/03/13/alpaca.html
 instruction = r'What is an alpaca? How is it different from a llama?'
@@ -100,16 +102,15 @@ instruction = r'What is the capital of Tanzania?'
 instruction = r'Write a well-thought out abstract for a machine learning paper that proves that 42 is the optimal seed for training neural networks.'
 '''
 
-prompt_no_input = f'### Instruction:\n{instruction}\n\n### Response:'
+prompt_no_input = f'Below is an instruction that describes a task. Write a response that appropriately completes the request.\n\n### Instruction:\n{instruction}\n\n### Response:'
 tokens = tokenizer.encode(prompt_no_input)
-bos_token_id, eos_token_id = 1, 2 # see https://github.com/openlm-research/open_llama#preview-weights-release-and-usage
-tokens = [bos_token_id] + tokens + [eos_token_id] + [bos_token_id]
-tokens = torch.LongTensor(tokens[-1024:]).unsqueeze(0).cuda()
+
+tokens = torch.LongTensor(tokens).unsqueeze(0)
 instance = {'input_ids': tokens,
-            'top_k': 50,
-            'top_p': 0.9,
-            'generate_len': 128}
-            
+                    'top_k': 50,
+                    'top_p': 0.9,
+                    'generate_len': 128}
+                    
 length = len(tokens[0])
 with torch.no_grad():
     rest = model.generate(
@@ -120,17 +121,15 @@ with torch.no_grad():
             top_p=instance['top_p'], 
             top_k=instance['top_k']
         )
-
+        
 output = rest[0][length:]
-string = tokenizer.decode(output, skip_special_tokens=False)
-string = string.replace('<s>', '').replace('</s>', '').strip()
+string = tokenizer.decode(output, skip_special_tokens=True)
 print(f'[!] Generation results: {string}')
 ```
 
 **[Model Output]**
 ```
-[!] Generation results: An alpaca is a smaller version of a llama. Both are South American animals. However, 
-an alpaca has a wooly coat that is very soft, while a llama’s coat is tougher and woolier.
+[!] Generation results: Alpacas are a species of South American camelid, the smallest of the three living species native to South America (llamas and guanaco are the other two). Alpacas are slightly larger than llamas at 50 to 70 pounds (22 to 31 kilograms). Their tails have a tuft of hair at the end, whereas llamas' tails are just knobby. Alpacas have brown or black coats.
 ```
 
 
