@@ -170,8 +170,8 @@ The table below shows the hyperparameters of the learning process.
 
 |**Model Size**|**Batch Size**|**Learning Rate**|**Epoch Number**|**Maximum length**|
 |:-------------:|:-------------:|:-------------:|:-------------:|:-------------:|
-||||||
-||||||
+|3B|64|2e-5|3|1536|
+|7B|64|2e-5|3|1024|
 
 
 
@@ -197,9 +197,6 @@ The resulting checkpoint `pytorch_model.bin` is quite large. If you would like t
         ├── pytorch_model-00001-of-00006.bin
         ├── pytorch_model-00002-of-00006.bin
         ├── pytorch_model-00003-of-00006.bin
-        ├── pytorch_model-00004-of-00006.bin
-        ├── pytorch_model-00005-of-00006.bin
-        ├── pytorch_model-00006-of-00006.bin
         ├── pytorch_model.bin.index.json
         ├── special_tokens_map.json
         ├── tokenizer_config.json
