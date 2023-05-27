@@ -128,7 +128,10 @@ print(f'[!] Generation results: {string}')
 
 **[Model Output]**
 ```
-[!] Generation results: Alpacas are a species of South American camelid, the smallest of the three living species native to South America (llamas and guanaco are the other two). Alpacas are slightly larger than llamas at 50 to 70 pounds (22 to 31 kilograms). Their tails have a tuft of hair at the end, whereas llamas' tails are just knobby. Alpacas have brown or black coats.
+[!] Generation results: Alpacas are a species of South American camelid, the smallest of the three living species native 
+to South America (llamas and guanaco are the other two). Alpacas are slightly larger than llamas at 50 to 70 pounds 
+(22 to 31 kilograms). Their tails have a tuft of hair at the end, whereas llamas' tails are just knobby. Alpacas have 
+brown or black coats.
 ```
 
 
