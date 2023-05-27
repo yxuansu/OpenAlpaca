@@ -157,10 +157,22 @@ pip install torch==1.13.1+cu117 -f https://download.pytorch.org/whl/torch/
 
 ## 2. Model Training:
 
-In our experiments, we train our model using DeepSpeed with Zero-3 on 8xA100 GPUs. To start the training, run the following command. The entire training process should take around 30 minutes.
+In our experiments, we train our model using DeepSpeed with Zero-3 on 8xA100 GPUs. To start the training of 3B model, run the following command. 
 ```yaml
+cd ./scripts/
+chmod +x train_openalpaca_3b.sh 
+cd ..
 ./scripts/train_openalpaca_3b.sh
 ```
+
+To start the training of 7B model, run the following command. 
+```yaml
+cd ./scripts/
+chmod +x train_openalpaca_7b.sh 
+cd ..
+./scripts/train_openalpaca_7b.sh
+```
+
 The key arguments of the training script are as follows:
 * `--max_length`: The maximum sequence length of training instances.
 * `--data_path`: The path of training data.
