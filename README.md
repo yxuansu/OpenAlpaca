@@ -159,23 +159,23 @@ pip install torch==1.13.1+cu117 -f https://download.pytorch.org/whl/torch/
 
 In our experiments, we train our model using DeepSpeed with Zero-3 on 8xA100 GPUs. To start the training, run the following command. The entire training process should take around 30 minutes.
 ```yaml
-./scripts/train_sft.sh
+./scripts/train_openalpaca_3b.sh
 ```
 The key arguments of the training script are as follows:
-* `--model_path`: The directory (e.g. [./openllama_ckpt](./openllama_ckpt)) that stores the downloaded checkpoints of OpenLLaMA.
+* `--max_length`: The maximum sequence length of training instances.
 * `--data_path`: The path of training data.
 * `--save_path`: The path to save the fine-tuned OpenAlpaca checkpoint.
 
 The table below shows the hyperparameters of the learning process.
 
-|**Hyperparameter**|**Value**|
-|:-------------:|:-------------:|
-|Batch size|64|
-|Learning rate|2e-5|
-|Epochs|3|
-|Maximum length|1024|
+|**Model Size**|**Batch Size**|**Learning Rate**|**Epoch Number**|**Maximum length**|
+|:-------------:|:-------------:|:-------------:|:-------------:|:-------------:|
+||||||
+||||||
 
-The `batch_size` and `learning_rate` can be adjusted in [./dsconfig/openllama.json](./dsconfig/openllama.json). The `epoch_number` and `maximum_length` can be adjusted in [./config/openllama.yaml](./config/openllama.yaml).
+
+
+The `batch_size` and `learning_rate` can be adjusted in [./dsconfig/openllama.json](./dsconfig/openllama.json). The `epoch_number` can be adjusted in [./config/openllama.yaml](./config/openllama.yaml).
 
 After the training completes, you find the tokenizer, configuration, and deepspeed checkpoints in `--save_path`. Running the following command to convert the deepspeed checkpints to torch models.
 ```yaml
