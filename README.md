@@ -89,7 +89,6 @@ from transformers import LlamaForCausalLM, LlamaTokenizer
 
 # the previewed version of OpenAlpaca
 model_path = r'openllmplayground/openalpaca_3b_600bt_preview'
-cache_dir = r'./openalpaca_ckpt/'
 tokenizer = LlamaTokenizer.from_pretrained(model_path)
 model = LlamaForCausalLM.from_pretrained(model_path).cuda()
 tokenizer.bos_token_id, tokenizer.eos_token_id = 1,2 # see https://github.com/openlm-research/open_llama#preview-weights-release-and-usage
