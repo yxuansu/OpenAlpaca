@@ -52,6 +52,8 @@ The data, i.e. [openalpaca.json](https://github.com/yxuansu/OpenAlpaca/blob/main
 We use the following prompts to fine-tune the OpenAlpaca model:
 - for examples with an empty input field:
 ```
+Below is an instruction that describes a task. Write a response that appropriately completes the request.
+
 ### Instruction:
 {instruction}
 
@@ -60,11 +62,13 @@ We use the following prompts to fine-tune the OpenAlpaca model:
 
 - for examples with a non-empty input field:
 ```
-### Input:
-{input}
+Below is an instruction that describes a task, paired with an input that provides further context. Write a response that appropriately completes the request.
 
 ### Instruction:
 {instruction}
+
+### Input:
+{input}
 
 ### Response:
 ```
