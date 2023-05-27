@@ -155,26 +155,7 @@ If any error occurs when installing torch, you can install torch manually with t
 pip install torch==1.13.1+cu117 -f https://download.pytorch.org/whl/torch/
 ```
 
-## 2. Download OpenLLaMA checkpoints:
-
-Before training OpenAlpaca, please manually downloading the checkpoints of OpenLLaMA from huggingface and place the downloaded files in the [./openllama_ckpt](./openllama_ckpt) directory. Below are the links of available OpenLLaMA models.
-- The previewed version of [OpenLLaMA trained with 200 billion tokens](https://huggingface.co/openlm-research/open_llama_7b_preview_200bt/tree/main/open_llama_7b_preview_200bt_transformers_weights).
-- The previewed version of [OpenLLaMA trained with 300 billion tokens](https://huggingface.co/openlm-research/open_llama_7b_preview_300bt/tree/main/open_llama_7b_preview_300bt_transformers_weights).
-
-> **** After downloading, the directory should look like:
-
-    .
-    └── ./openllama_ckpt/             
-        ├── config.json
-        ├── generation_config.json
-        ├── pytorch_model-00001-of-00002.bin
-        ├── pytorch_model-00002-of-00002.bin
-        ├── pytorch_model.bin.index.json
-        ├── special_tokens_map.json
-        ├── tokenizer.model
-        └── tokenizer_config.json
-
-## 3. Model Training:
+## 2. Model Training:
 
 In our experiments, we train our model using DeepSpeed with Zero-3 on 8xA100 GPUs. To start the training, run the following command. The entire training process should take around 30 minutes.
 ```yaml
@@ -191,7 +172,7 @@ The table below shows the hyperparameters of the learning process.
 |:-------------:|:-------------:|
 |Batch size|64|
 |Learning rate|2e-5|
-|Epochs|2|
+|Epochs|3|
 |Maximum length|1024|
 
 The `batch_size` and `learning_rate` can be adjusted in [./dsconfig/openllama.json](./dsconfig/openllama.json). The `epoch_number` and `maximum_length` can be adjusted in [./config/openllama.yaml](./config/openllama.yaml).
@@ -228,7 +209,7 @@ Now the model is good to go! Enjoy playing with OpenAlpaca!
 
 # Future Plans:
 
-1. The current `openalpaca_7b_preview_2bt` model is fine-tuned on the previewed version of [OpenLLaMA-7b](https://github.com/openlm-research/open_llama). The previewed version of OpenLLaMA-7b is only trained with **200** billion tokens and we expect the performance of the base OpenLLaMA-7b model to improve as the training continues. We will update the version of OpenAlpaca so long as newer checkpoint is released by the authors of OpenLLaMA.
+1. The current model is fine-tuned on the previewed version of OpenLLaMA. We expect the performance of the base OpenLLaMA model to improve as the training continues. We will update the version of OpenAlpaca so long as newer checkpoint is released by the authors of OpenLLaMA.
 
 2. We also plan to do a rigorous evaluation of OpenAlpaca and compare it with other publicly accessible models.
 
