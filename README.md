@@ -24,8 +24,8 @@ This repo contains
 ****
 
 # News:
-* [2023/05/06] Release the training code and the OpenAlpaca model based on the OpenLLaMA model trained with 300 billion tokens.
-* [2023/05/04] The project of OpenAlpaca is open-sourced. Release the OpenAlpaca model based on the OpenLLaMA model trained with 200 billion tokens.
+* [2023/05/27] Update the training scripts and release models based on the lasted checkpoints of OpenLLaMA.
+* [2023/05/04] Open-sourced OpenAlpaca.
 
 ****
 
