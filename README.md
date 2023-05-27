@@ -194,9 +194,9 @@ The resulting checkpoint `pytorch_model.bin` is quite large. If you would like t
     └── ./ckpt/openalpaca/             
         ├── config.json
         ├── generation_config.json
-        ├── pytorch_model-00001-of-00006.bin
-        ├── pytorch_model-00002-of-00006.bin
-        ├── pytorch_model-00003-of-00006.bin
+        ├── pytorch_model-00001-of-00003.bin
+        ├── pytorch_model-00002-of-00003.bin
+        ├── pytorch_model-00003-of-00003.bin
         ├── pytorch_model.bin.index.json
         ├── special_tokens_map.json
         ├── tokenizer_config.json
