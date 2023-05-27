@@ -33,10 +33,10 @@ This repo contains
 
 # Model Weights:
 
-|**Model Name**|**Model Card**|**Model Description**|
-|:-------------:|:-------------:|:-------------:|
-|`openllmplayground/openalpaca_3b_600bt_preview`|[[Link]](https://huggingface.co/openllmplayground/openalpaca_3b_600bt_preview)|```The OpenAlpaca model fine-tuned from the previewed version of OpenLLaMA-3B that is trained with 600 billion tokens.```|
-|`openllmplayground/openalpaca_7b_700bt_preview`|[[Link]](https://huggingface.co/openllmplayground/openalpaca_7b_700bt_preview)|```The OpenAlpaca model fine-tuned from the previewed version of OpenLLaMA-7B that is trained with 700 billion tokens.```|
+|**Model Name**|**Model Card**|**Maximum Length**|**Model Description**|
+|:-------------:|:-------------:|:-------------:|:-------------:|
+|`openllmplayground/openalpaca_3b_600bt_preview`|[[Link]](https://huggingface.co/openllmplayground/openalpaca_3b_600bt_preview)|1536|```The OpenAlpaca model fine-tuned from the previewed version of OpenLLaMA-3B that is trained with 600 billion tokens.```|
+|`openllmplayground/openalpaca_7b_700bt_preview`|[[Link]](https://huggingface.co/openllmplayground/openalpaca_7b_700bt_preview)|1024|```The OpenAlpaca model fine-tuned from the previewed version of OpenLLaMA-7B that is trained with 700 billion tokens.```|
 
 <span id='data'/>
 
